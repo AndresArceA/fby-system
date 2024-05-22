@@ -52,7 +52,7 @@ app.get("/signin", (req, res) => {
         console.log("token gen: "+ token + tExpira);
         // como respuesta del servidor envío html que incluye enlace a zona privada, envía token como query string
         res.send(`
-            <a href="/private?token=${token}"> <p> Ir su Pagina Privada </p></a>
+            <a href="/private?token=${token}"> <p> Ir a su Pagina Privada </p></a>
             Bienvenido, ${email}.
 
             <script>
